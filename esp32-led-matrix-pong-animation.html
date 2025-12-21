@@ -9,21 +9,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
     <style>
-        .pong-hero-layout {
-            display: flex;
-            gap: 50px;
-            margin: 0 0 40px;
-            align-items: flex-start;
-        }
-        .pong-hero-layout .image-column {
-            flex: 0 0 auto;
-        }
-        .pong-hero-layout .image-column img {
-            width: 400px;
+        .pong-hero-image {
+            width: 100%;
+            max-width: 800px;
             height: auto;
-        }
-        .pong-hero-layout .description-column {
-            flex: 1;
+            display: block;
+            margin: 20px auto 40px;
         }
         .pong-overview-layout {
             display: flex;
@@ -50,14 +41,6 @@
             height: 100%;
         }
         @media (max-width: 992px) {
-            .pong-hero-layout {
-                flex-direction: column;
-                align-items: center;
-            }
-            .pong-hero-layout .image-column img {
-                width: 100%;
-                max-width: 400px;
-            }
             .pong-overview-layout {
                 flex-direction: column;
             }
@@ -97,14 +80,12 @@
         </header>
 
         <div class="project-content">
-            <!-- Hero Image with Description -->
-            <div class="pong-hero-layout">
-                <div class="image-column">
-                    <img src="assets/pong_still.png" alt="Pong Animation Still">
-                </div>
-                <div class="description-column">
-                    <p>Since I began coding in 2020, I have frequently recreated Pong anytime I'm experimenting with a new language or visual interface. It has been a sort of litmus test to explore what's possible, like my own "Hello World" project. My goal for this project was to take advantage of the quick prototyping nature of the Arduino framework to explore the <a href="https://github.com/mrcodetastic/ESP32-HUB75-MatrixPanel-DMA" target="_blank">ESP32-HUB75-MatrixPanel-DMA library</a>. In doing so, I was able to get my first sketch running on a HUB75 LED matrix with a smooth framerate and no artifacting. The result? A CPU-controlled Pong simulation in an eternal battle between two bots.</p>
-                </div>
+            <!-- Hero Image -->
+            <img src="assets/pong_still.png" alt="Pong Animation Still" class="pong-hero-image">
+
+            <!-- Description -->
+            <div class="project-description">
+                <p>Since I began coding in 2020, I have frequently recreated Pong anytime I'm experimenting with a new language or visual interface. It has been a sort of litmus test to explore what's possible, like my own "Hello World" project. My goal for this project was to take advantage of the quick prototyping nature of the Arduino framework to explore the <a href="https://github.com/mrcodetastic/ESP32-HUB75-MatrixPanel-DMA" target="_blank">ESP32-HUB75-MatrixPanel-DMA library</a>. In doing so, I was able to get my first sketch running on a HUB75 LED matrix with a smooth framerate and no artifacting. The result? A CPU-controlled Pong simulation in an eternal battle between two bots.</p>
             </div>
 
             <!-- Overview Section -->

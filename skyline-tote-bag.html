@@ -16,47 +16,53 @@
             display: block;
             margin: 0 auto 40px;
         }
+        
+        /* Gallery layout: Chess left (tall), right column with outside/inside top, full bottom */
         .bag-gallery {
             display: flex;
-            flex-direction: column;
-            gap: 20px;
-            align-items: center;
+            gap: 15px;
             margin-top: 30px;
         }
-        .bag-top-row {
-            display: flex;
-            gap: 20px;
-            justify-content: center;
+        
+        .bag-left {
+            flex-shrink: 0;
         }
-        .bag-outside-inside {
+        
+        .bag-right {
             display: flex;
-            flex-direction: row;
-            gap: 20px;
+            flex-direction: column;
+            gap: 15px;
         }
-        .bag-bottom-row {
+        
+        .bag-right-top {
             display: flex;
-            gap: 20px;
-            justify-content: center;
-            align-items: flex-start;
+            gap: 15px;
         }
+        
         .bag-chess {
             width: 409px;
-            height: auto;
+            height: 728px;
+            object-fit: cover;
         }
+        
         .bag-small {
             width: 267px;
-            height: auto;
+            height: 400px;
+            object-fit: cover;
         }
+        
         .bag-full {
-            width: auto;
-            height: auto;
-            max-width: 551px;
-            align-self: stretch;
+            width: 551px;
+            height: 310px;
+            object-fit: cover;
         }
+        
         @media (max-width: 992px) {
-            .bag-top-row,
-            .bag-bottom-row,
-            .bag-outside-inside {
+            .bag-gallery {
+                flex-direction: column;
+                align-items: center;
+            }
+            .bag-right-top {
                 flex-direction: column;
                 align-items: center;
             }
@@ -105,17 +111,17 @@
             <section class="project-section">
                 <h2>Gallery</h2>
                 <div class="bag-gallery">
-                    <!-- Top row: outside and inside side by side -->
-                    <div class="bag-top-row">
-                        <div class="bag-outside-inside">
-                            <img src="assets/bag_outside.jpg" alt="Tote bag outside" class="bag-small">
-                            <img src="assets/bag_inside.jpg" alt="Tote bag inside" class="bag-small">
-                        </div>
+                    <!-- Left: Chess bag (tall) -->
+                    <div class="bag-left">
+                        <img src="assets/bag_chess.jpg" alt="Tote bag with chess pieces" class="bag-chess">
                     </div>
-                    <!-- Bottom row: chess on left, full on right -->
-                    <div class="bag-bottom-row">
-                        <img src="assets/bag_chess.jpg" alt="Tote bag with chess board pattern" class="bag-chess">
-                        <img src="assets/bag_full.jpg" alt="Tote bag full view" class="bag-full">
+                    <!-- Right column: outside/inside on top, full on bottom -->
+                    <div class="bag-right">
+                        <div class="bag-right-top">
+                            <img src="assets/bag_outside.jpg" alt="Tote bag outside" class="bag-small">
+                            <img src="assets/bag_inside.jpg" alt="Tote bag inside pocket" class="bag-small">
+                        </div>
+                        <img src="assets/bag_full.jpg" alt="Tote bag full view inside" class="bag-full">
                     </div>
                 </div>
             </section>

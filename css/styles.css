@@ -154,6 +154,7 @@ main {
     text-align: left;
     display: flex;
     flex-direction: column;
+    position: relative;
 }
 
 .hero-text h1 {
@@ -164,6 +165,7 @@ main {
 
 .hero-text .line1 {
     font-size: 48px;
+    margin-left: 50px;
 }
 
 .hero-text .line1 .highlight {
@@ -173,8 +175,8 @@ main {
 
 .hero-text .line2 {
     font-size: 48px;
-    margin-left: 80px;
-    margin-top: -10px;
+    margin-left: 165px;
+    margin-top: 0px;
 }
 
 .hero-text .line2 .highlight {
@@ -184,8 +186,8 @@ main {
 
 .hero-text .line3 {
     font-size: 64px;
-    margin-left: 40px;
-    margin-top: -5px;
+    margin-left: 30px;
+    margin-top: 15px;
 }
 
 .hero-text .line3 .highlight {
@@ -196,7 +198,7 @@ main {
 .hero-cta {
     font-size: 24px;
     margin-top: 20px;
-    margin-left: 40px;
+    margin-left: 30px;
     cursor: pointer;
     transition: color 0.3s ease;
     display: block;
@@ -245,6 +247,7 @@ main {
 /* Projects Section */
 .projects-section {
     padding: 20px 100px 40px;
+    margin-top: 0px;
 }
 
 .project-row {
@@ -303,6 +306,7 @@ main {
 /* Art Section */
 .art-section {
     padding: 20px 100px 40px;
+    margin-top: 0px;
 }
 
 .art-grid {
@@ -363,6 +367,7 @@ main {
 .contact-section {
     padding: 40px 100px 60px;
     text-align: center;
+    margin-top: 0px;
 }
 
 .contact-links {
@@ -406,12 +411,12 @@ main {
 
 .project-header {
     text-align: center;
-    padding: 40px 100px 20px;
+    padding: 40px 100px 10px;
 }
 
 .project-header h1 {
     font-size: 48px;
-    margin-bottom: 10px;
+    margin-bottom: 0;
 }
 
 .github-btn {
@@ -420,7 +425,7 @@ main {
     border: 1px solid var(--white);
     border-radius: 50px;
     font-size: 16px;
-    margin-top: 10px;
+    margin-top: 0;
     transition: all 0.3s ease;
 }
 
@@ -438,7 +443,7 @@ main {
 .project-hero-media {
     width: 100%;
     max-width: 800px;
-    margin: 0 auto 40px;
+    margin: 20px auto 40px;
     display: flex;
     justify-content: center;
 }
