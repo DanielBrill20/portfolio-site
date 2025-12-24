@@ -28,7 +28,7 @@ body {
 
 /* Typography */
 h1, h2, h3, .nav-link {
-    font-family: 'Bebas Neue', cursive;
+    font-family: 'Bebas Neue', sans-serif;
     font-weight: 400;
 }
 
@@ -75,6 +75,11 @@ a:hover {
 
 .navbar.scrolled {
     background-color: var(--bio-bg);
+}
+
+.navbar .logo {
+    display: flex;
+    align-items: center;
 }
 
 .navbar .logo img {
@@ -132,6 +137,9 @@ main {
     width: 100%;
     max-width: 1440px;
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
 }
 
 /* Hero Section */
@@ -182,7 +190,7 @@ main {
 .hero-text .line2 {
     font-size: 48px;
     margin-left: 160px;
-    margin-top: 0px;
+    margin-top: 20px;
 }
 
 .hero-text .line2 .highlight {
@@ -192,7 +200,7 @@ main {
 
 .hero-text .line3 {
     font-size: 64px;
-    margin-top: 15px;
+    margin-top: 20px;
 }
 
 .hero-text .line3 .highlight {
@@ -204,6 +212,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 25px;
 }
 
 .hero-cta {
@@ -227,12 +236,12 @@ main {
     justify-content: center;
     gap: 80px;
     margin-top: 20px;
-    margin-left: calc(-50vw + 50%);
-    margin-right: calc(-50vw + 50%);
     width: 100vw;
     position: relative;
     left: 50%;
-    transform: translateX(-50%);
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
 }
 
 .bio-image img {
@@ -251,13 +260,13 @@ main {
 .section-title {
     font-size: 48px;
     text-align: center;
-    margin: 40px 0;
+    margin: 0 0 40px 0;
 }
 
 /* Projects Section */
 .projects-section {
-    padding: 20px 100px 40px;
-    margin-top: 0px;
+    padding: 0 100px 0;
+    margin-top: 0;
 }
 
 .project-row {
@@ -266,6 +275,10 @@ main {
     justify-content: center;
     gap: 50px;
     margin-bottom: 40px;
+}
+
+.project-row:last-child {
+    margin-bottom: 0;
 }
 
 .project-row.reverse {
@@ -315,8 +328,8 @@ main {
 
 /* Art Section */
 .art-section {
-    padding: 20px 100px 40px;
-    margin-top: 0px;
+    padding: 0 100px 0;
+    margin-top: 0;
 }
 
 .art-grid {
@@ -375,9 +388,9 @@ main {
 
 /* Contact Section */
 .contact-section {
-    padding: 40px 100px 60px;
+    padding: 0 100px 60px;
     text-align: center;
-    margin-top: 0px;
+    margin-top: 0;
 }
 
 .contact-links {
@@ -417,6 +430,7 @@ main {
 /* Project Pages */
 .project-page {
     padding-top: 78px;
+    gap: 0;
 }
 
 .project-header {
@@ -473,7 +487,7 @@ main {
 .project-description {
     max-width: 1000px;
     margin: 0 auto 40px;
-    text-align: center;
+    text-align: left;
 }
 
 .project-section {

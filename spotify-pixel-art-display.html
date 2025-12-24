@@ -76,7 +76,7 @@
             display: flex;
             gap: 50px;
             margin: 40px 0;
-            align-items: flex-start;
+            align-items: center;
         }
         .tech-highlights-layout .images-column {
             flex: 0 0 auto;
@@ -128,10 +128,7 @@
             transform: translateX(-50%);
             white-space: nowrap;
         }
-        /* Add padding to collage bottom to make room for absolutely positioned captions */
-        .tech-images-row-bottom {
-            margin-bottom: 50px;
-        }
+        /* No extra margin needed - captions are absolutely positioned and overflow */
         
         @media (max-width: 992px) {
             .spotify-album-images {
@@ -171,7 +168,7 @@
         <!-- Project Header -->
         <header class="project-header">
             <h1>Spotify Pixel Art Display</h1>
-            <a href="https://github.com/DanielBrill20/spotify-pixel-art-display" target="_blank" class="github-btn">Checkout the GitHub</a>
+            <a href="https://github.com/DanielBrill20/spotify-pixel-art-display" target="_blank" class="github-btn">View on GitHub</a>
         </header>
 
         <div class="project-content">
